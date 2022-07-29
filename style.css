@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+ul a{
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+}
+
+ul a .fa{
+    font-size: 4rem;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--clr);
+}
+
+ul a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-bottom: 4px solid var(--clr);
+    transition: 0.5s ease-in-out;
+    font-family: fontAwesome;
+    text-align: center;
+    line-height: 80px;
+    font-size: 4rem;
+    color: var(--clr);
+    overflow: hidden;
+}
+
+ul a:hover::before{
+    height: 100%;
+}
+
+ul a:nth-child(1)::before{
+    content: '\f09a';
+}
+
+ul a:nth-child(2)::before{
+    content: '\f099';
+}
+ul a:nth-child(3)::before{
+    content: '\f16d';
+}
+ul a:nth-child(4)::before{
+    content: '\f0e1';
+}
+ul a:nth-child(5)::before{
+    content: '\f232';
+}
+ul a:nth-child(6)::before{
+    content: '\f16a';
+}
